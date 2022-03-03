@@ -18,7 +18,7 @@ export default function Page2() {
         email,
         password,
       };
-      await axios.post("http://localhost:5000/auth/signin", signInData);
+      await axios.post("http://localhost:4000/auth/signin", signInData);
       await getLoggedIn();
       navigate("/statistics");
     } catch (err) {

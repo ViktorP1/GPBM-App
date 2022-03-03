@@ -58,7 +58,7 @@ function ApplicationChart({ applications }) {
           "rgba(220, 58, 153, 0.8)",
           "rgba(49, 58, 55, 0.8)",
         ],
-        borderWidth: 7,
+
         cutout: "10%",
         borderRadius: 50,
       },

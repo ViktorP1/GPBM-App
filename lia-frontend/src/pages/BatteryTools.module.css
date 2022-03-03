@@ -30,6 +30,28 @@
   gap: 1rem;
 }
 
+.resultTable {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  border-radius: 0.625rem;
+  background-color: white;
+}
+
+table.tableSelection, tr, td {
+  width: 80%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+}
+
+
+.resultPage {
+  display: flex;
+  gap: 1rem;
+}
+
+
 @media (min-width: 30rem) and (max-width: 50rem) {
   .section {
     grid-template-columns: repeat(3, calc(((100% - 1rem) / 3)));
@@ -38,6 +60,6 @@
 @media (min-width: 50rem) {
   .section {
     /* grid-template-columns: repeat(4, calc(((100% - 1.5rem) / 4))); */
-    grid-template-columns: repeat(3, calc(((100% - 1rem) / 3)));
+    grid-template-columns: repeat(2, calc(((100% - 1rem) / 2)));
   }
 }

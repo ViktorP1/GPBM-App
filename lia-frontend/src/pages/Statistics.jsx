@@ -13,7 +13,7 @@ function Statistics() {
   useEffect(() => {
     async function getStatistics() {
       const statisticsRes = await axios.get(
-        "http://localhost:5000/statistics/"
+        "http://localhost:3000/statistics/"
       );
       setMarket(statisticsRes.data);
       setApplications(statisticsRes.data);
@@ -56,7 +56,7 @@ function Statistics() {
         <button className="log-btn-thr" onClick={exportExcel}>
           <i className="fas fa-download"> Export to Excel</i>
         </button>
-        <table className={Styles.table} id="excel-table">
+        <table className={Styles.tableS} id="excel-table">
           <thead>
             <tr>
               <th>Market</th>

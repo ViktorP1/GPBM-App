@@ -1,67 +1,28 @@
 const MARKETS = [
   {
     id: "1",
-    name: "Smart cities",
+    name: "Smart city",
     img: "smart-city.jpg",
     applications: [
       {
         id: "A10",
         name: "Waste Management",
-        img: "placeholder.png",
+        img: "application-wastemanagement-573x109px.jpg",
       },
       {
         id: "A20",
-        name: "Noise Meter",
-        img: "placeholder.png",
+        name: "Pollution sensors",
+        img: "application-pollutionsensors-573x109px.jpg",
       },
       {
         id: "A30",
-        name: "Pollution Sensor",
-        img: "placeholder.png",
-      },
-    ],
-  },
-  {
-    id: "2",
-    name: "Home automation",
-    img: "smart-home.jpg",
-    applications: [
-      {
-        id: "B1",
-        name: "Access Control",
-        img: "placeholder.png",
+        name: "Noise meters",
+        img: "application-noisemeters-573x109px.jpg",
       },
       {
-        id: "B2",
-        name: "Temperature Management",
-        img: "placeholder.png",
-      },
-    ],
-  },
-  {
-    id: "3",
-    name: "Agriculture",
-    img: "agriculture.jpg",
-    applications: [
-      {
-        id: "C1",
-        name: "Weather Station",
-        img: "placeholder.png",
-      },
-      {
-        id: "C2",
-        name: "Humidity sensor",
-        img: "placeholder.png",
-      },
-      {
-        id: "C3",
-        name: "Temperature sensor",
-        img: "placeholder.png",
-      },
-      {
-        id: "C4",
-        name: "Animal tracking",
-        img: "placeholder.png",
+        id: "A40",
+        name: "Traffic sensors",
+        img: "application-trafficsensors-573x109px.jpg",
       },
     ],
   },
@@ -72,13 +33,77 @@ const MARKETS = [
     applications: [
       {
         id: "D1",
-        name: "Tracking",
-        img: "placeholder.png",
+        name: "Domestic",
+        img: "application-domestic-573x109px.jpg",
       },
       {
         id: "D2",
+        name: "Entrances",
+        img: "application-entrances-573x109px.jpg",
+      },
+      {
+        id: "D3",
+        name: "Tracking",
+        img: "application-tracking-573x109px.jpg",
+      },
+      {
+        id: "D4",
+        name: "Personal",
+        img: "application-personal-573x109px.jpg",
+      },
+    ],
+  },
+  {
+    id: "3",
+    name: "Agriculture",
+    img: "agriculture.jpg",
+    applications: [
+      {
+        id: "C1",
+        name: "Temperature sensor",
+        img: "application-temperaturesensor-573x109px.jpg",
+      },
+      {
+        id: "C2",
+        name: "Humidity sensor",
+        img: "application-humiditysensor-573x109px.jpg",
+      },
+      {
+        id: "C3",
+        name: "Animal tracking",
+        img: "application-animaltracking-573x109px.jpg",
+      },
+      {
+        id: "C4",
+        name: "Weather sensor",
+        img: "application-weathersensor-573x109px.jpg",
+      },
+    ],
+  },
+  {
+    id: "2",
+    name: "Smart home",
+    img: "smart-home.jpg",
+    applications: [
+      {
+        id: "B1",
         name: "Access control",
-        img: "placeholder.png",
+        img: "application-accesscontrol-573x109px.jpg",
+      },
+      {
+        id: "B2",
+        name: "Security appliances",
+        img: "application-securityappliances-573x109px.jpg",
+      },
+      {
+        id: "B3",
+        name: "Temperature Management",
+        img: "application-temperaturemanagement-573x109px.jpg",
+      },
+      {
+        id: "B4",
+        name: "Health and wellness",
+        img: "application-healthandwellness-573x109px.jpg",
       },
     ],
   },

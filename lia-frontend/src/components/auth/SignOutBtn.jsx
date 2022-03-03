@@ -8,7 +8,7 @@ function SignOutBtn() {
   const navigate = useNavigate();
 
   async function signOut() {
-    await axios.get("http://localhost:5000/auth/logout");
+    await axios.get("http://localhost:4000/auth/logout");
     await getLoggedIn();
     navigate("/");
   }

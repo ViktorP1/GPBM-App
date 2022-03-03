@@ -19,7 +19,7 @@ export default function Page1() {
         password,
         passwordVerify,
       };
-      await axios.post("http://localhost:5000/auth/signup", registerData);
+      await axios.post("http://localhost:4000/auth/signup", registerData);
       await getLoggedIn();
       navigate("/");
     } catch (err) {

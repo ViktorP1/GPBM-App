@@ -73,7 +73,7 @@ export default function BatteryTool() {
       };
 
       await axios.post(
-        "https://gpbm-app.herokuapp.com/statistics",
+        "http://localhost:4000/statistics",
         savedStatistics
       );
     } catch (err) {
@@ -168,7 +168,63 @@ export default function BatteryTool() {
       )}
 
       {progress === "6" && (
-        <div className={Styles.resultSection}>
+        <div>
+          <h2 className={Styles.sectionTitle}>Review your selections</h2>
+          <div className={Styles.resultPage}>
+
+            <div className={Styles.resultPic}>
+              
+            </div>
+
+            <div className={Styles.resultTable}>
+              <table className={Styles.tableSelection}>
+                <tbody className="table1">
+                <tr>
+                  <td>Market area</td>
+                  <td>{market.name}</td>
+                </tr>
+                <tr>
+                  <td>Application</td>
+                  <td>{application.name}</td>
+                </tr>
+                <tr>
+                  <td>Conditions</td>
+                  <td>{items.name}</td>
+                </tr>
+                <tr>
+                  <td>Service life</td>
+                  <td>{serviceLife}</td>
+                </tr>
+                <tr>
+                  <td>Power consumption</td>
+                  <td>{current}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div className={Styles.resultButton}>
+              <button className="big-button" onClick={sendResult}>
+                Get my results
+              </button>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+      {parseInt(progress) > 1 && (
+        <button className="big-button" onClick={backHandler}>
+          &larr; Back
+        </button>
+      )}
+    </Fragment>
+  );
+}
+
+/*
+
+<div className={Styles.resultSection}>
           <button className="big-button" onClick={sendResult}>
             Get my results
           </button>
@@ -179,13 +235,5 @@ export default function BatteryTool() {
             Send Email
           </button>
         </div>
-      )}
 
-      {parseInt(progress) > 1 && (
-        <button className="back-button" onClick={backHandler}>
-          &larr; Back
-        </button>
-      )}
-    </Fragment>
-  );
-}
+*/
