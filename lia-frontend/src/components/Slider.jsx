@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
+import Styles from "./Slider.module.css";
 
 function Slider(props) {
   const currentSliderRef = useRef();
@@ -13,9 +14,10 @@ function Slider(props) {
 
   };
   return (
-    <div>
-      <form onSubmit={submitHandler}>
+    <div className={Styles.sliderBox}>
+      <form onSubmit={submitHandler} className={Styles.sliderForm}>
         <input
+          className={Styles.slider}
           onChange={onChangeHandler}
           type="range"
           min={props.min}

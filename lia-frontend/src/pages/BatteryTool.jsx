@@ -140,22 +140,23 @@ export default function BatteryTool() {
       {progress === "4" && (
         <div>
           <h2 className={Styles.sectionTitle}>Select current</h2>
-          <div className={Styles.section}>
+          <div>
             <Slider
               min="0"
-              max="20"
+              max="10"
               step="1"
               value={current}
               onSubmit={currentSelectionHandler}
             />
           </div>
+          
         </div>
       )}
 
       {progress === "5" && (
         <div>
           <h2 className={Styles.sectionTitle}>Select service life</h2>
-          <div className={Styles.section}>
+          <div>
             <Slider
               min="0"
               max="10"
