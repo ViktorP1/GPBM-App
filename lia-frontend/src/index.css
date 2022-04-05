@@ -75,7 +75,7 @@
   color: white;
 }
 .stepper-item.active .step-counter,
-.stepper-item.completed .step-counter {
+.stepper-item.completed .step-counter  {
   border: none;
   background-color: #5edf53;
   color: white;

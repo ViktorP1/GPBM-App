@@ -5,6 +5,7 @@ import Stepper from "../components/Stepper";
 import MARKETS from "../data/MARKETS";
 import Styles from "./BatteryTools.module.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function BatteryTool() {
   const [progress, setProgress] = useState("1");
@@ -13,6 +14,7 @@ export default function BatteryTool() {
   const [items, setTemperature] = useState(null);
   const [current, setCurrent] = useState("0");
   const [serviceLife, setServiceLife] = useState("0");
+  const navigate = useNavigate();
 
   function backHandler() {
     if (progress === "2") {
@@ -79,7 +81,7 @@ export default function BatteryTool() {
     } catch (err) {
       console.error(err);
     }
-    setProgress("1");
+    navigate("/resultpage");
   }
 
   function sendEmail() {
